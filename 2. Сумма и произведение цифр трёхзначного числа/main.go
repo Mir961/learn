@@ -8,8 +8,7 @@ import (
 func main() {
 	rand.Seed(time.Now().UnixNano())
 
-	num := rand.Intn(900)
-	num += 100
+	num := rand.Intn(900) + 100
 	println("Число", num)
 
 	c := num % 10
