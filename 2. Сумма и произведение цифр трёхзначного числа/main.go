@@ -8,9 +8,16 @@ import (
 func main() {
 	rand.Seed(time.Now().UnixNano())
 
-	var a int
+	num := rand.Intn(900)
+	num += 100
+	println("Число", num)
 
-	a = rand.Intn(900)
-
-	println(a + 100)
+	c := num % 10
+	b := (num%100 - c) / 10
+	a := (num - c - b) / 100
+	println("цифр", a)
+	println("цифр", b)
+	println("цифр", c)
+	println("Сумма цифр", a+b+c)
+	println("Произведение цифр", a*b*c)
 }
