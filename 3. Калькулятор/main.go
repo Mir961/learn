@@ -13,10 +13,10 @@ func main() {
 		return
 	}
 
-	println(Calculate(a, operation, b))
+	println(calculate(a, operation, b))
 }
 
-func Calculate(a int, operation string, b int) int {
+func calculate(a int, operation string, b int) int {
 	if operation == "+" {
 		return a + b
 	}
