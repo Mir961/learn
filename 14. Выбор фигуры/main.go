@@ -5,7 +5,7 @@ import "fmt"
 func main() {
 	var i int
 
-	fmt.Println("Введите номер фигуры")
+	fmt.Println("Введите номер фигуры (1 - квадрат, 2 - прямоугольник, 3 - треугольник, 4 - круг)")
 	fmt.Scan(&i)
 
 	switch i {
